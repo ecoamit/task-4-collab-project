@@ -11,222 +11,83 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/app.css">
 
 
-
 </head>
 
 <body>
-    <header>
-        <div id="mySidenav" class="sidenav">
-            <a href="#">
-                <img src="https://image.ibb.co/bLb7T9/logo.jpg" class="logo" alt="logo"> Bitmanity</a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <!-- Actual search box -->
-            <div class="form-group has-search">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search games..">
-            </div>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+
+    <div id="wrapper">
+        <div class="toggle-switch">
+            <a href="#" class="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
-
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </header>
-
-    <footer class="ct-footer">
-        <div class="container">
-            <form name="contentForm" enctype="multipart/form-data" method="post" action="">
-                <div class="ct-footer-pre text-center-lg">
-                    <div class="inner">
-                        <span>Join WebCorpCo to receive updates, news & events!</span>
+        <!--Side Navigation Bar-->
+        <nav class="side-nav">
+            <ul class="side-nav-list">
+                <li class="list-item1">
+                    <div class="header">
+                        <a href="#">
+                            <img src="https://image.ibb.co/bLb7T9/logo.jpg" class="header-logo" alt="logo">
+                            <span class="header-name">Bitmanity</span>
+                        </a>
                     </div>
-                    <div class="inner">
-                        <div class="form-group">
-                            <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text"
-                                value="">
-                            <label for="nl_email" class="sr-only">Email Address</label>
-                            <button type="submit" class="btn btn-motive">Join</button>
-                        </div>
+                </li>
+
+                <li class="list-item2">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search games..">
                     </div>
-                </div>
-            </form>
-            <ul class="ct-footer-list text-center-sm">
-                <li>
-                    <h2 class="ct-footer-list-header">Learn More</h2>
-                    <ul>
-                        <li>
-                            <a href="">Company</a>
-                        </li>
-                        <li>
-                            <a href="">Clients</a>
-                        </li>
-                        <li>
-                            <a href="">News</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                    </ul>
                 </li>
-                <li>
-                    <h2 class="ct-footer-list-header">Services</h2>
-                    <ul>
-                        <li>
-                            <a href="">Design</a>
-                        </li>
-                        <li>
-                            <a href="">Marketing</a>
-                        </li>
-                        <li>
-                            <a href="">Sales</a>
-                        </li>
-                        <li>
-                            <a href="">Programming</a>
-                        </li>
-                        <li>
-                            <a href="">Support</a>
-                        </li>
-                    </ul>
+
+                <li class="list-item3">
+                    <a href="#">Browse Games</a>
                 </li>
-                <li>
-                    <h2 class="ct-footer-list-header">The Industry</h2>
-                    <ul>
-                        <li>
-                            <a href="">Thought Leadership</a>
-                        </li>
-                        <li>
-                            <a href="">Webinars</a>
-                        </li>
-                        <li>
-                            <a href="">Events</a>
-                        </li>
-                        <li>
-                            <a href="">Sponsorships</a>
-                        </li>
-                        <li>
-                            <a href="">Advisors</a>
-                        </li>
-                        <li>
-                            <a href="">Training Program</a>
-                        </li>
-                        <li>
-                            <a href="">Activities & Campaigns</a>
-                        </li>
-                    </ul>
+
+                <li class="list-item4">
+                    <a href="#">Deals</a>
                 </li>
-                <li>
-                    <h2 class="ct-footer-list-header">Public Relations</h2>
-                    <ul>
-                        <li>
-                            <a href="">WebCorpCo Blog</a>
-                        </li>
-                        <li>
-                            <a href="">Hackathons</a>
-                        </li>
-                        <li>
-                            <a href="">Videos</a>
-                        </li>
-                        <li>
-                            <a href="">News Releases</a>
-                        </li>
-                        <li>
-                            <a href="">Newsletters</a>
-                        </li>
-                    </ul>
+
+                <li class="list-item5">
+                    <button type="button" class="btn btn-sm btn-light">sign in</button>
                 </li>
-                <li>
-                    <h2 class="ct-footer-list-header">About</h2>
-                    <ul>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Our Board</a>
-                        </li>
-                        <li>
-                            <a href="">Our Staff</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
+
+                <li class="list-item6">
+                    <button type="button" class="btn btn-sm btn-outline-light">register</button>
                 </li>
             </ul>
-            <div class="ct-footer-meta text-center-sm">
+        </nav>
+
+
+
+        <!--Main Content-->
+        <div class="page-content-wrapper">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <address>
-                            <span>Bitmanity
-                                <br>
-                            </span>123 Easy Street
-                            <br> Mumbai
-                            <br>
-                            <span>Phone:
-                                <a href="tel:5555555555">(555) 555-8899</a>
-                            </span>
-                        </address>
-                    </div>
-                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
-                        <a href="" target="_blank">
-                            <img alt="app store" src="https://www.solodev.com/assets/footer/appstore.png">
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
-                        <a href="" target="_blank">
-                            <img alt="google play store" src="https://www.solodev.com/assets/footer/androidstore.png">
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <ul class="ct-socials list-unstyled list-inline">
-                            <li>
-                                <a href="" target="_blank">
-                                    <img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <img alt="pinterest" src="https://www.solodev.com/assets/footer/pinterest-white.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="ct-footer-post">
-            <div class="container">
-                <div class="inner-right">
-                    <p>Copyright &copy; 2016 WebCorpCo.&nbsp;
-                        <a href="">Privacy Policy</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 
 </body>
