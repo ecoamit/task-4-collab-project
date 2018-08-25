@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 /***********Sidebar***************/
 
 #sidebar-wrapper {
@@ -6,19 +10,21 @@
     width: 0;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #2C3E50;
+    background-color: rgb(36, 39, 43);
     opacity: 0.9;
 }
 
 /******Main content*******/
-#page-content-wrapper{
+
+#page-content-wrapper {
     width: 100%;
     position: absolute;
     padding: 15px;
 }
 
 /*******change the side bar to display it******/
-.toggled #sidebar-wrapper{
+
+.toggled #sidebar-wrapper {
     width: 250px;
 }
 
@@ -26,36 +32,100 @@
     padding-left: 250px;
 }
 
-
 /****Sidebar Styling*****/
-.sidebar-nav{
+
+.sidebar-nav {
     padding: 0;
     list-style: none;
 }
 
-.sidebar-nav li{
+.sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
 
-.sidebar-nav li a{
+.sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #ddd;
 }
 
-.sidebar-nav li a:hover{
-    background-color: #16A085;
+/**sidebar list styling**/
+
+li.header-info {
+    padding-top: 50px;
+    font-size: 30px;
 }
 
-img.header-logo{
+/***Search-Bar****/
+
+.form-group {
+    padding: 30px 15px 0px 15px;
+}
+
+input.form-control {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+img.header-logo {
     width: 40px;
     height: 40px;
+}
+
+a.list-item:hover {
+    background-color: #aaa;
+}
+
+
+.list-item {
+    font-size: 20px;
 }
 
 a#menu-toggle {
     font-size: 25px;
     margin-left: 20px;
+}
+
+.nav-list-item1{
+    margin-top:30px;
+}
+
+
+.signin {
+    margin-top: 250px;
+}
+
+#btn1,
+#btn2 {
+    width: 208px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#btn1:hover{
+    background-color: rgb(67, 167, 148);
+}
+
+
+.register {
+    margin-top: 20px;
 }
 
 /* **************************************
@@ -66,17 +136,18 @@ images Slider
 */
 
 #game-offers img {
-    height: 400px;
+    height: 700px;
 }
 
 .image-content {
-    height: 240px;
+    height: 230px;
     padding: 0 0 15px 0;
 }
 
 .image-content h3 {
     font-size: 14px;
     font-weight: 400;
+     margin-top: 10px;
 }
 
 .image-content button {
@@ -95,6 +166,16 @@ images Slider
     padding: 30px;
 }
 
+button.btn.btn-warning {
+    margin-top: 35px;
+}
+
+.image-content h4 {
+    margin-top: 5px;
+}
+h2.players {
+    margin-top: -20px;
+}
 /*end of image slider*/
 
 /*
@@ -180,3 +261,20 @@ onsale-games action game
 }
 
 /*end onsale-games*/
+
+
+/*****Contact Form*****/
+#imaging {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+#login-modal .modal-dialog {
+    width: 800px;
+}
+
+#login-modal input[type=text],
+input[type=password] {
+    margin-top: 15px;
+}
