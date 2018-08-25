@@ -8,10 +8,10 @@ body {
     z-index: 2;
     position: fixed;
     width: 0;
-    height: 100vh;
     overflow-x: hidden;
     background-color: rgb(36, 39, 43);
     opacity: 0.9;
+    height: 100vh;
 }
 
 /******Main content*******/
@@ -51,9 +51,50 @@ body {
 
 /**sidebar list styling**/
 
+img.header-logo {
+    width: 40px;
+    height: 40px;
+}
+
+a#menu-toggle {
+    font-size: 25px;
+    margin-left: 20px;
+}
+a.list-item:hover {
+    background-color: #aaa;
+}
+
+.list-item {
+    font-size: 20px;
+}
+
+/*
 li.header-info {
-    padding-top: 50px;
+    margin-top: 50px;
     font-size: 30px;
+}
+
+
+
+.nav-list-item1 {
+    margin-top: 30px;
+}
+
+#btn1,
+#btn2 {
+    width: 208px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#btn1:hover {
+    background-color: rgb(67, 167, 148);
+}
+.signin{
+    margin-top: 30px;
+}
+.register {
+    margin-top: 20px;
 }
 
 /***Search-Bar****/
@@ -84,50 +125,6 @@ input.form-control {
     color: #aaa;
 }
 
-img.header-logo {
-    width: 40px;
-    height: 40px;
-}
-
-a.list-item:hover {
-    background-color: #aaa;
-}
-
-
-.list-item {
-    font-size: 20px;
-}
-
-a#menu-toggle {
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-.nav-list-item1{
-    margin-top:30px;
-}
-
-
-.signin {
-    margin-top: 250px;
-}
-
-#btn1,
-#btn2 {
-    width: 208px;
-    text-transform: capitalize;
-    color: #fff;
-}
-
-#btn1:hover{
-    background-color: rgb(67, 167, 148);
-}
-
-
-.register {
-    margin-top: 20px;
-}
-
 /* **************************************
   ***************************************
 images Slider
@@ -135,7 +132,7 @@ images Slider
   ***************************************
 */
 
-#game-offers img {
+#game-offer img {
     height: 700px;
 }
 
@@ -199,24 +196,22 @@ premier-games
 
 .overlay1 {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 95%;
-    height: 105px;
-    color: #fff;
-    padding: 15px;
+    height: 90px;
+    padding: 10px;
     line-height: 2;
-    margin: auto;
-    position: absolute;
-    top: 200px;
+    margin-bottom: -60px;
+    position: relative;
+    top: -90px;
 }
 
 .overlay1 h3 {
     margin: 0px;
+    font-size: 20px;
 }
 
 .overlay1 h4 {
     margin: 0px;
-    font-size: 17px;
-    line-height: 2;
+    font-size: 17p
 }
 
 /*end of premier-games*/
